@@ -4,25 +4,41 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald); /*import oswald font family*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans); /*import open sans font family*/
 
+// Variables
+// Background Color
 @darkGrey:#3b3c3e; /*dark theme background color*/
+
+// Text & Button Colors
 @offWhite:#ebebeb; /*dark theme text color*/
 @lightGrey: #999ba1; /*dark theme button indention*/
 @highlightY: #eaca5d; /*yellow used for links & active states*/
 @highlightB: #4fc5e7; /*blue used for links & active states*/
+
+// Fonts
 @headerFont:'Oswald', sans-serif; /*font type used for headers*/
 @bodyFont:'Open Sans', sans-serif; /*font type used for all other text*/
 
-
+// Header Styles
 h1, h2, h3, h4, h5, h6{
+  // Font
   font-family:@headerFont;
 }
+
+// Body Styles
 body{
+  // Background Color
   background-color:@darkGrey;
+  // Font Color
   color:@offWhite;
+  // Font
   font-family:@bodyFont;
 }
+
+// Link Styles
 a {
+  // No Decoration (No Underline)
   text-decoration: none;
+  // Font Color
   color: @offWhite;
 }
 
@@ -40,6 +56,7 @@ input[type="checkbox"]{
 input[type="checkbox"]:checked {
  background-color:@highlightY;
 }
+// Unchecked Style
 input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
  position:relative;
  top:0;
@@ -51,6 +68,7 @@ input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
  color:black;
  content: '';
 }
+// Checked Style
 input[type="checkbox"]:checked:after {
  content: '\2713';
  line-height:.9em;
@@ -72,6 +90,7 @@ input[type="radio"] {
 input[type="radio"]:checked {
  background-color:@highlightY;
 }
+// Unchecked Style
 input[type="radio"]:before, input[type="radio"]:checked:before {
  position:relative;
  top:0;
@@ -83,6 +102,7 @@ input[type="radio"]:before, input[type="radio"]:checked:before {
  color:black;
  content: '';
 }
+// Checked Style
 input[type="radio"]:checked:after {
  content:'◉';
  color:@highlightY;
@@ -131,5 +151,3 @@ input[data-toggle="switch"]:checked:after {
  padding-left:.2em;
  padding-right:.2em;
 }
-
- 
